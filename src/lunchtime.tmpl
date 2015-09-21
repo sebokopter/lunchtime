@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link href="lunchtime.css" type="text/css" rel="stylesheet">
+    <title><TMPL_VAR NAME=TITLE></title>
+  </head>
+  <body>
+    <div class="last-update">
+      <p><TMPL_VAR NAME=LAST_UPDATE></p>
+    </div> 
+    <div class="toc">
+<TMPL_LOOP NAME=TOC>
+  :: <a href="#<TMPL_VAR NAME=HREF>">
+  <TMPL_VAR NAME=NAME>
+  </a>
+</TMPL_LOOP>
+  ::
+    </div>
+    <div class="restaurants">
+<TMPL_LOOP NAME=RESTAURANTS>
+      <div class="restaurant">
+        <div class="title">
+          <a id="<TMPL_VAR NAME=ANCHOR>">
+          <TMPL_VAR NAME=NAME>
+          </a>
+        </div>
+        <div class="body">
+          <div class="description">
+<TMPL_LOOP NAME=DESCRIPTION>
+            <TMPL_VAR NAME=ITEM><br>
+</TMPL_LOOP>
+          </div>
+          <div class="comment">
+<TMPL_LOOP NAME=COMMENT>
+            <TMPL_VAR NAME=ITEM><br>
+</TMPL_LOOP>
+          </div>
+          <div class="menu">
+<TMPL_LOOP NAME=MENU>
+            <TMPL_VAR NAME=ITEM><br>
+</TMPL_LOOP>
+          </div>
+          <div class="url">
+            <TMPL_IF NAME=URL>
+            <a href="<TMPL_VAR NAME=URL>">
+              <TMPL_VAR NAME=URL_NAME>
+            </a>
+            <TMPL_ELSE>
+            <TMPL_VAR NAME=URL_NAME>
+            </TMPL_IF>
+          </div>
+        </div>
+      </div> 
+</TMPL_LOOP>
+    </div>
+    <div class="more">
+      <p>
+        Mehr hier: <a href="http://mittagstisch-ka.de/">http://mittagstisch-ka.de/</a>
+      </p>
+    </div>
+    <div class="copyright">
+      <p>
+        Alle Angaben ohne Gewähr.
+      </p>
+      <p>
+        <a href="https://github.com/sebokopter/lunchtime">https://github.com/sebokopter/lunchtime</a><br>
+        Copyright 2015 Sebastian Heil | MIT License
+      </p>
+    </div>
+    <p></p>
+  </body>
+</html>
