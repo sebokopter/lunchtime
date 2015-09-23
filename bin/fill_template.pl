@@ -1,6 +1,6 @@
 #!/usr/bin/env perl
 
-use Modern::Perl '2015';
+use Modern::Perl '2014';
 
 =head1 NAME
 

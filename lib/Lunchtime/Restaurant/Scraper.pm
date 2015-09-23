@@ -1,6 +1,6 @@
 package Web::Scraper::Filter::EncodeUtf8;
 
-use Modern::Perl '2015';
+use Modern::Perl '2014';
 
 use base qw(Web::Scraper::Filter);
 use Encode;
@@ -15,7 +15,7 @@ sub filter {
 
 package Lunchtime::Restaurant::Scraper;
 
-use Modern::Perl '2015';
+use Modern::Perl '2014';
 
 use Data::Dumper;
 use Moo;

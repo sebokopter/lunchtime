@@ -1,6 +1,6 @@
 package Lunchtime::Restaurant::Parser;
 
-use Modern::Perl '2015';
+use Modern::Perl '2014';
 
 use Data::Dumper;
 use Encode;
