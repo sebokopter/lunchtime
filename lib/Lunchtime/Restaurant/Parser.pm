@@ -33,6 +33,11 @@ has menu_data => (
   is => 'ro',
 );
 
+has spacer => (
+  is => 'ro',
+);
+
+
 sub parse_pdf {
   my $self = shift;
 
@@ -50,7 +55,25 @@ sub parse_pdf {
     eval( '$text =~ ' . $self->{substitute} );
   };
   @{$menu} = split('\n', $text);
+
   $self->{menu_data}{menu} = $menu;
+
+  if ( defined $self->spacer ) {
+    my $filtered_menu_data = ();
+
+    for my $item (@{$self->{menu_data}{menu}}) {
+
+      push(@{$filtered_menu_data}, $item);
+
+      my $regex = $self->spacer;
+      if ( $item =~ $regex ) {
+        push(@{$filtered_menu_data}, "");
+      };
+
+    };
+    $self->{menu_data}{menu} = $filtered_menu_data;
+  };
+
 };
 
 1;

@@ -46,3 +46,8 @@ The following restaurants are currently covered:
 - Romulus et Remus
 - Sol i Luna
 - Vogelbräu
+
+## TODO
+
+- spacer line which inserts new line in front of given regex
+- insert <pre> tags for metzgerei sack output
