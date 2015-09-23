@@ -23,6 +23,7 @@ The following perl modules are required:
 
 The following system binaries are required:
 - /usr/bin/pdftotext (debian package: poppler-utils)
+- /usr/bin/lessc (debian package: node-less; or npm install -g lessc)
 
 ## Installation
 
