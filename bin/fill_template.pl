@@ -37,11 +37,12 @@ use File::Slurp;
 use Getopt::Long;
 use JSON;
 use HTML::Template;
+use POSIX qw(strftime);
 
 my $p_template    = 'src/lunchtime.tmpl';
 my $p_json        = 'out/lunchtime.json';
 my $p_html        = 'out/lunchtime.html';
-my $p_title       = 'Tages- und Wochenkarten';
+my $p_title       = 'Speise-, Tages- und Wochenkarten';
 
 GetOptions(
   'template=s'    => \$p_template,
@@ -60,7 +61,7 @@ my $json_data   = decode_utf8( read_file( $p_json ) );
 my $data        = $json->decode( $json_data );
 
 $template->param( TITLE  => $p_title );
-$template->param( LAST_UPDATE => localtime($data->{last_update}) . "");
+$template->param( LAST_UPDATE => strftime( "%F %T", localtime( $data->{last_update} ) ) . "");
 
 my @toc = ();
 
