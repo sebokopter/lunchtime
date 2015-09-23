@@ -59,7 +59,7 @@ my $json        = JSON->new;
 my $json_data   = decode_utf8( read_file( $p_json ) );
 my $data        = $json->decode( $json_data );
 
-$template->param( TITLE  => $p_html );
+$template->param( TITLE  => $p_title );
 $template->param( LAST_UPDATE => localtime($data->{last_update}) . "");
 
 my @toc = ();

@@ -6,18 +6,24 @@
     <title><TMPL_VAR NAME=TITLE></title>
   </head>
   <body>
-    <div class="last-update">
-      <p><TMPL_VAR NAME=LAST_UPDATE></p>
-    </div> 
-    <div class="toc">
+    <div id=header>
+      <h1><TMPL_VAR NAME=TITLE></h1>
+      <div id="toc">
 <TMPL_LOOP NAME=TOC>
-  :: <a href="#<TMPL_VAR NAME=HREF>">
-  <TMPL_VAR NAME=NAME>
-  </a>
+      :: <a href="#<TMPL_VAR NAME=HREF>">
+      <TMPL_VAR NAME=NAME>
+      </a>
 </TMPL_LOOP>
-  ::
+      ::
+      </div>
+      <div id="info">
+        <p id="more">
+          Mehr hier: <a href="http://mittagstisch-ka.de/">http://mittagstisch-ka.de/</a>
+        </p>
+        <p id="last_update">Letzte Aktualisierung: <TMPL_VAR NAME=LAST_UPDATE></p>
+      </div>
     </div>
-    <div class="restaurants">
+    <div id="restaurants">
 <TMPL_LOOP NAME=RESTAURANTS>
       <div class="restaurant">
         <div class="title">
@@ -54,12 +60,7 @@
       </div> 
 </TMPL_LOOP>
     </div>
-    <div class="more">
-      <p>
-        Mehr hier: <a href="http://mittagstisch-ka.de/">http://mittagstisch-ka.de/</a>
-      </p>
-    </div>
-    <div class="copyright">
+    <div id="copyright">
       <p>
         Alle Angaben ohne Gewähr.
       </p>

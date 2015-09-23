@@ -1,16 +1,40 @@
 @import "bootstrap/bootstrap.less";
 
 body {
+  #header {
+    h1 {
+      text-align: center;
+    }
 
-  .last-update {
-    .container;
-    p {
-      &:before {
-        content: "Letzte Aktualisierung: "
+    #toc {
+      .container;
+      margin: 0 auto;
+      background-color: #FFBE8A;
+      text-align: center;
+      padding: 10px;
+    }
+
+    #info {
+      .container;
+      text-align: center;
+      margin: 0 auto;
+      margin-top: 10px;
+      background-color: #FFD6B5;
+      padding: 10px;
+      #last_update {
+        display: inline;
+        margin: 10px;
+        text-align: right;
+      }
+      #more {
+        display: inline;
+        margin: 10px;
+        text-align: left;
       }
     }
+
   }
-  .restaurants {
+  #restaurants {
     .restaurant { 
       div {
         margin: 10px;
@@ -33,7 +57,17 @@ body {
     }
   }
 
-  .copyright, .more {
+  #copyright {
     .container;
+  }
+}
+
+div.restaurant div.title {
+  a {
+  color: #000000;
+  }
+  a:hover, a:focus {
+    color: #000000;
+    text-decoration: none;
   }
 }
