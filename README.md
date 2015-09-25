@@ -58,4 +58,4 @@ The following restaurants are currently covered:
 ## TODO
 
 - spacer line which inserts new line in front of given regex
-- insert <pre> tags for metzgerei sack output
+- get pictures from xpaths like: .//div[@class='fbStarGrid']/div[1]/a (for Cafe Galerie, from: https://www.facebook.com/pages/Cafe-Galerie/181267271890905?sk=photos_stream&ref=page_internal)
