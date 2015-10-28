@@ -84,8 +84,9 @@ sub scrape {
     };
   };
 
+  my $menu_data;
   eval {
-    my $menu_data = $scraper->scrape( URI->new($self->{url}) );
+    $menu_data = $scraper->scrape( URI->new($self->{url}) );
   };
   if ($@) {
     cluck("Could not scrape '$self->{url}'");
