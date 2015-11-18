@@ -21,6 +21,7 @@ use Data::Dumper;
 use Moo;
 use URI;
 use Web::Scraper;
+use Carp qw(cluck);
 
 extends 'Lunchtime::Restaurant';
 
