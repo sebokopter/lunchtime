@@ -1,18 +1,3 @@
-package Web::Scraper::Filter::EncodeUtf8;
-
-use Modern::Perl '2014';
-
-use base qw(Web::Scraper::Filter);
-use Encode;
-
-sub filter {
-  my($self, $value) = @_;
-#  return encode_utf8($value);
-  return $value;
-};
-
-1;
-
 package Lunchtime::Restaurant::Scraper;
 
 use Modern::Perl '2014';
@@ -116,3 +101,20 @@ sub scrape {
 };
 
 1;
+
+package Web::Scraper::Filter::EncodeUtf8;
+
+use Modern::Perl '2014';
+
+use base qw(Web::Scraper::Filter);
+use Encode;
+
+sub filter {
+  my($self, $value) = @_;
+#  return encode_utf8($value);
+  return $value;
+};
+
+1;
+
+
