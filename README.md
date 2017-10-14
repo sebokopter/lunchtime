@@ -55,6 +55,36 @@ The following restaurants are currently covered:
 - Sol i Luna
 - Vogelbräu
 
+## Config file
+
+The config file is written in perl's Config::General style. Every restaurant has to be enclosed with an unique tag like <rimelin>...</rimelin>.
+
+### Configuration Options
+
+#### name
+
+Name of the restaurant which is displayed in the HTML output file.
+
+#### url
+
+URL to either an HTML or PDF location which should be parsed for lunchtime menus.
+
+#### type
+
+Either "html" or "pdf" has to be defined here. This changes the parsing, so wether pdf2txt or an HTML scraper is invoked.
+
+#### xpath
+
+If the type is "html" then you have to define xpaths where to find the "menu", "description" (optional) and "comment" (optional) from the given URL.
+
+#### spacer
+
+After lines matching this regular expression there is an new line injected in the output.
+
+#### filter
+
+Here is room to write your own perl sub/function which is run over the parsed input just before writing the output to the HTML file.
+
 ## TODO
 
 - spacer line which inserts new line in front of given regex
