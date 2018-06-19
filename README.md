@@ -42,7 +42,6 @@ The following restaurants are currently covered:
 - Bambusgarten
 - Borsalino
 - Cafe Galerie
-- Curry'n'Roll
 - Da Pino
 - Große Linde
 - Hanoi
