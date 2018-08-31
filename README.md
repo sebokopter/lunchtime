@@ -35,7 +35,6 @@ The following system binaries are required:
 
 The following restaurants are currently covered:
 
-- Abseits
 - Alte Durlacher Brauerei
 - American Diner
 - Aslan
