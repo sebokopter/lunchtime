@@ -42,7 +42,7 @@ The following restaurants are currently covered:
 - Borsalino
 - Cafe Galerie
 - Da Pino
-- Große Linde
+- Festhalle
 - Hanoi
 - Indian Rasoi
 - Maharani
