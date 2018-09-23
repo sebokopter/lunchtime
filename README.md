@@ -35,7 +35,6 @@ The following system binaries are required:
 
 The following restaurants are currently covered:
 
-- Abseits
 - Alte Durlacher Brauerei
 - American Diner
 - Aslan
@@ -43,7 +42,7 @@ The following restaurants are currently covered:
 - Borsalino
 - Cafe Galerie
 - Da Pino
-- Große Linde
+- Festhalle
 - Hanoi
 - Indian Rasoi
 - Maharani
