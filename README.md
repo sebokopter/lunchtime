@@ -50,7 +50,7 @@ The following restaurants are currently covered:
 - Pavarotti
 - Rimelin
 - Romulus et Remus
-- Sol i Luna
+- Villa Durla
 - Vogelbräu
 
 ## Config file
