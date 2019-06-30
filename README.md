@@ -41,6 +41,7 @@ The following restaurants are currently covered:
 - Bambusgarten
 - Borsalino
 - Cafe Galerie
+- Chickenhouse
 - Da Pino
 - Festhalle
 - Hanoi
@@ -48,9 +49,8 @@ The following restaurants are currently covered:
 - Maharani
 - Metzgerei Sack
 - Pavarotti
-- Rimelin
 - Romulus et Remus
-- Sol i Luna
+- Villa Durla
 - Vogelbräu
 
 ## Config file
