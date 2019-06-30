@@ -15,7 +15,7 @@ The following perl modules are required:
 - File::Temp
 - HTML::Template
 - JSON
-- MOO
+- Moo
 - Modern::Perl
 - URI
 - Web::Scraper
