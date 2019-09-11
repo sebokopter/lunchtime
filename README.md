@@ -33,25 +33,7 @@ The following system binaries are required:
 
 ## Restaurants in Karlsruhe-Durlach
 
-The following restaurants are currently covered:
-
-- Alte Durlacher Brauerei
-- American Diner
-- Aslan
-- Bambusgarten
-- Borsalino
-- Cafe Galerie
-- Chickenhouse
-- Da Pino
-- Festhalle
-- Hanoi
-- Indian Rasoi
-- Maharani
-- Metzgerei Sack
-- Pavarotti
-- Romulus et Remus
-- Villa Durla
-- Vogelbräu
+Only Restaurants in Karlsruhe-Durlach are covered. To see the current list have a look in the [config file](src/restaurants.conf).
 
 ## Config file
 
